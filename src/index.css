@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Inter:wght@300;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.custom-menu .ant-menu-item {
+  color: black !important;
+  width: 98%;
+  font-size: 28px;
+  text-align: left;
+  margin-left: 2px;
+  margin-right: 4px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.custom-menu .ant-menu-item-selected {
+  background-color: #4e38f5 !important;
+  color: white !important;
+  border-radius: 8px;
+}
+
+.custom-menu .ant-menu-item:hover {
+  background-color: #4e38f5 !important;
+  color: white !important;
+  border-radius: 8px;
+}
+
+.custom-table .ant-table-thead > tr > th {
+  background-color: #4e38f5; /* Darker gray background for the header */
+  color: #ffffff; /* White text color for the header */
+  font-weight: bold;
+  text-align: center;
+}
+
+.custom-cardHeader .ant-card-head,.custom-list .ant-list-header{
+  background-color: #4e38f5; /* Darker gray background for the header */
+  color: #ffffff; /* White text color for the header */
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  --d:22px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  color: #25b09b;
+  box-shadow: 
+    calc(1*var(--d))      calc(0*var(--d))     0 0,
+    calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+    calc(0*var(--d))      calc(1*var(--d))     0 2px,
+    calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+    calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+    calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+    calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+  animation: l27 1s infinite steps(8);
+}
+@keyframes l27 {
+  100% {transform: rotate(1turn)}
+}
+
+.ant-calendar-date-cell {
+  min-height: 80px; /* Adjust the height */
+  min-width: 80px;  /* Adjust the width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.ant-calendar-date {
+  font-size: 18px; /* Adjust the font size */
+}
+
+.appointment-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appointment-item {
+  margin-bottom: 5px;
+}
+
+.ant-layout .ant-layout-sider-zero-width-trigger{
+  top: 8px !important;
+  background: #0284c7 !important;
+}
+.ant-layout .client.ant-layout-sider,.client .ant-menu-dark{
+  background: #0284c7 !important;
+}
+.client .ant-menu-dark .ant-menu-item-selected{
+  background: white !important;
+  color: #0284c7 !important;
+}
